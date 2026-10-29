@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/assets/images/favicon/outside-blue.png"
+      sizes="16x16"
+    />
+    <title>Praevia Studio</title>
+    <meta
+      name="description"
+      content="Praevia Studio — a one-person practice working across design, writing and film. Portfolio, journal and field notes."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!--
+  =====================================================================
+  GOOGLE ADSENSE — SITE-WIDE LOADER (currently disabled)
+  Once your AdSense account is approved, uncomment this tag and replace
+  ca-pub-XXXXXXXXXXXXXXXX with your real publisher ID. This must load
+  on every page that shows an ad unit.
+  =====================================================================
+  -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2308916087883001"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ================= MASTHEAD ================= -->
+    <header class="masthead" id="top">
+      <div class="masthead__top container">
+        <a href="#top" class="wordmark">PRAEVIA <span>STUDIO</span></a>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+          <a href="#featured">Featured</a>
+          <a href="#works">Works</a>
+          <a href="#journal">Journal</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span></span>
+        </button>
+      </div>
+
+      <!-- ================================== TICKER(add upcoming project/blogs) ==========================================-->
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track" id="tickerTrack">
+          <span>HORN & BEAM - PLATE I - IX ILLUSTRATED FIELD GUIDE</span
+          ><span class="dot">—</span>
+          <span>E- LITE - PORTFOLIO FOR A COASTRAL ARCHITECT</span
+          ><span class="dot">—</span>
+          <span>MODAN STUDIO - STUDIO WEBDESIGN</span><span class="dot">—</span>
+          <span>TODAY'S FASHION - SITE FOR CLOTH STORE</span
+          ><span class="dot">—</span>
+          <span>K FOR COFFEE - SITE FOR COFFEE SHOP</span
+          ><span class="dot">—</span>
+          <span>Fading World - WEBSITE ABOUT DECLINE OF FOREST</span
+          ><span class="dot">—</span>
+          <!-- duplicated for seamless marquee loop -->
+          <span>HORN & BEAM - PLATE I - IX ILLUSTRATED FIELD GUIDE</span
+          ><span class="dot">—</span>
+          <span>E- LITE - PORTFOLIO FOR A COASTRAL ARCHITECT</span
+          ><span class="dot">—</span>
+          <span>MODAN STUDIO - STUDIO WEBDESIGN</span><span class="dot">—</span>
+          <span>TODAY'S FASHION - SITE FOR CLOTH STORE</span
+          ><span class="dot">—</span>
+          <span>K FOR COFFEE - SITE FOR COFFEE SHOP</span
+          ><span class="dot">—</span>
+          <span>Fading World - WEBSITE ABOUT DECLINE OF FOREST</span
+          ><span class="dot">—</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= INDEX RAIL (signature nav) ================= -->
+    <nav class="index-rail" aria-label="Section index">
+      <button class="index-rail__item is-active" data-target="#hero">
+        <em>00</em>Index
+      </button>
+      <button class="index-rail__item" data-target="#featured">
+        <em>01</em>Featured
+      </button>
+      <button class="index-rail__item" data-target="#works">
+        <em>02</em>Works
+      </button>
+      <button class="index-rail__item" data-target="#journal">
+        <em>03</em>Journal
+      </button>
+      <button class="index-rail__item" data-target="#about">
+        <em>04</em>About
+      </button>
+      <button class="index-rail__item" data-target="#contact">
+        <em>05</em>Contact
+      </button>
+    </nav>
+
+    <main id="main">
+      <!-- ================= HERO ================= -->
+      <section id="hero" class="hero container">
+        <p class="eyebrow">While(learning) • {build(); • grow();}</p>
+        <h1 class="hero__title">Previews of things<br />not yet made.</h1>
+        <p class="hero__lede">
+          Praevia Studio is the personal practice. Here every project is a rough
+          cut of a bigger idea. Below: finished work, work-in-progress, and the
+          notes taken along the way.
+        </p>
+        <dl class="hero__meta">
+          <div>
+            <dt>Est.</dt>
+            <dd>2026</dd>
+          </div>
+          <div>
+            <dt>Based in</dt>
+            <dd>Remote / Worldwide</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Code, Design, Web, Blog</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Open for commissions</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- ================= FEATURED (cover story) ================= -->
+      <section id="featured" class="featured container">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h2>From the Journal</h2>
+        </div>
+
+        <article class="featured-post">
+          <a
+            class="featured-post__media"
+            style="--plate: #1e3af0"
+            href="journal/designing-in-public-without-performing.html"
+          ></a>
+          <div class="featured-post__body">
+            <div class="featured-post__meta">
+              <span class="journal-row__date">Jul 14, 2026</span>
+              <span class="journal-row__tag">Notes</span>
+            </div>
+            <h3 class="featured-post__title">
+              <a href="journal/designing-in-public-without-performing.html"
+                >Designing in public without performing</a
+              >
+            </h3>
+            <p class="featured-post__excerpt">
+              On sharing unfinished work honestly, and why "process content" so
+              often flattens the process it claims to show.
+            </p>
+            <a
+              class="featured-post__cta"
+              href="journal/designing-in-public-without-performing.html"
+              >Read the story &rarr;</a
+            >
+          </div>
+        </article>
+      </section>
+
+      <!-- ================= WORKS ================= -->
+      <section id="works" class="works container">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2>Selected Works</h2>
+          <div
+            class="filters"
+            id="filters"
+            role="group"
+            aria-label="Filter works by category"
+          >
+            <button class="filter-btn is-active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="branding">branding</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="web">web</button>
+          </div>
+        </div>
+
+        <div class="works-grid" id="worksGrid">
+          <!-- ============= 01 ================-->
+          <a
+            class="work-card"
+            data-category="web"
+            style="--plate: #1e3af0; --plate-image: url('works/horn/horn.jpeg')"
+            href="works/Horn/index.html"
+          >
+            <div class="work-card__plate work-card__plate--photo">
+              <span>01</span>
+            </div>
+            <h3>Horn &amp; Beam</h3>
+            <p class="work-card__meta">
+              Web — Plates I–IX · Illustrated Field Guide
+            </p>
+          </a>
+          <!-- ============= 02 ================-->
+          <a
+            class="work-card"
+            data-category="branding"
+            style="
+              --plate: #14151a;
+              --plate-image: url('works/e-lite/e-light.jpeg');
+            "
+            href="works/ELITE/index.html"
+          >
+            <div class="work-card__plate work-card__plate--photo">
+              <span>02</span>
+            </div>
+            <h3>E-LITE</h3>
+            <p class="work-card__meta">Branding — Moving forward</p>
+          </a>
+          <!-- ============= 03 ================-->
+          <a
+            class="work-card"
+            data-category="web"
+            style="
+              --plate: #f2c230;
+              --plate-image: url('works/modan-studop/modanstudio.jpeg');
+            "
+            href="works/Modan-studio/Pixel.html"
+          >
+            <div class="work-card__plate work-card__plate--photo">
+              <span>03</span>
+            </div>
+            <h3>Modan Studio</h3>
+            <p class="work-card__meta">web — Studio Website</p>
+          </a>
+
+          <!-- ============ AD SLOT — in-grid native unit ============ -->
+          <div class="work-card ad-slot" data-ad-slot="works-native">
+            <span class="ad-slot__label">Advertisement</span>
+            <!--
+          Replace with your real AdSense unit once approved:
+          -->
+            <ins
+              class="adsbygoogle"
+              style="display: block"
+              data-ad-client="ca-pub-2308916087883001"
+              data-ad-slot="XXXXXXXXXX"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
+            <script>
+              ;(adsbygoogle = window.adsbygoogle || []).push({})
+            </script>
+            <div class="ad-slot__placeholder">Ad space — 300×250</div>
+          </div>
+          <!-- ============= 04 ================-->
+          <a
+            class="work-card"
+            data-category="web"
+            style="
+              --plate: #6b695f;
+              --plate-image: url('works/clothing-store/selvege.jpeg');
+            "
+            href="works/clothing-store/index.html"
+          >
+            <div class="work-card__plate work-card__plate--photo">
+              <span>04</span>
+            </div>
+            <h3>Today's Fashion</h3>
+            <p class="work-card__meta">Web - Clothing Store(Website)</p>
+          </a>
+
+          <!-- ============= 05 ================-->
+          <a
+            class="work-card"
+            data-category="web"
+            style="
+              --plate: #1e3af0;
+              --plate-image: url('works/coffee-shop/coffee-store.jpeg');
+            "
+            href="works/coffee-shop/index.html"
+          >
+            <div class="work-card__plate work-card__plate--photo">
+              <span>05</span>
+            </div>
+            <h3>K for Coffee</h3>
+            <p class="work-card__meta">Web — Coffee - Shop</p>
+          </a>
+          <!-- ============= 06 ================-->
+          <a
+            class="work-card"
+            data-category="web"
+            style="
+              --plate: #14151a;
+              --plate-image: url('works/forest-decline/canopy.jpeg');
+            "
+            href="works/forest-decline/index.html"
+          >
+            <div class="work-card__plate work-card__plate--photo">
+              <span>06</span>
+            </div>
+            <h3>Fading World</h3>
+            <p class="work-card__meta">Web — Site about forest decline</p>
+          </a>
+        </div>
+        <p style="margin-top: 1.5rem">
+          <a href="works/index.html">View all works &rarr;</a>
+        </p>
+      </section>
+
+      <!-- ================= JOURNAL ================= -->
+      <section id="journal" class="journal container">
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h2>Journal</h2>
+        </div>
+
+        <!-- ================ BLOGGER FEED ================ -->
+        <div class="journal-list" id="blog-posts"></div>
+
+        <p style="margin-top: 1.5rem">
+          <a
+            href="https://blog.praeviastudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View all journal entries &rarr;</a
+          >
+        </p>
+        <!-- ============ AD SLOT — in-feed unit ============ -->
+        <div class="journal-row ad-slot" data-ad-slot="journal-infeed">
+          <span class="ad-slot__label">Advertisement</span>
+          <!--
+          Replace with your real AdSense in-feed/in-article unit:
+          -->
+          <ins
+            class="adsbygoogle"
+            style="display: block"
+            data-ad-format="fluid"
+            data-ad-layout-key="-XX+X-XX-XX+XX"
+            data-ad-client="ca-pub-2308916087883001"
+            data-ad-slot="XXXXXXXXXX"
+          ></ins>
+          <script>
+            ;(adsbygoogle = window.adsbygoogle || []).push({})
+          </script>
+
+          <div class="ad-slot__placeholder">Ad space — responsive in-feed</div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="about container">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2>About</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__bio">
+            <p>
+              Praevia — Latin for <em>foresight, a going-before</em> — is the
+              name I gave this practice because most of what I make starts as a
+              preview: a sketch of a brand before the client sees it, a rough
+              cut before the film is locked, a draft before the essay is right.
+            </p>
+            <p>
+              I work alone, by choice, across three disciplines that keep
+              teaching each other things: identity design, long-form writing,
+              and short documentary film. Clients hire me for one of the three
+              and usually leave with all three woven together.
+            </p>
+            <p>
+              When I'm not on a client project, I publish the Journal above —
+              essays, field notes and half-finished ideas I'm not precious about
+              sharing early.
+            </p>
+          </div>
+
+          <dl class="colophon">
+            <div>
+              <dt>Tools</dt>
+              <dd>
+                Figma, DaVinci Resolve, a notebook that never leaves the bag
+              </dd>
+            </div>
+            <div>
+              <dt>Trained in</dt>
+              <dd>Graphic design, documentary production</dd>
+            </div>
+            <div>
+              <dt>Currently reading</dt>
+              <dd>Essays on vernacular architecture</dd>
+            </div>
+            <div>
+              <dt>Available for</dt>
+              <dd>Identity systems, editorial sites, short-form documentary</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="contact container">
+        <div class="section-head">
+          <span class="section-num">05</span>
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__main">
+            <a href="mailto:preaviastudio@gmail.com" class="contact__email"
+              >hello@praevia.studio</a
+            >
+            <p class="contact__note">
+              For commissions, collaborations, or just to say the journal was
+              useful. I read everything myself.
+            </p>
+
+            <ul class="contact__social">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Are.na</a></li>
+              <li><a href="#">Letterboxd</a></li>
+              <li><a href="#">RSS</a></li>
+            </ul>
+          </div>
+
+          <form
+            class="newsletter"
+            id="newsletterForm"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/thanks.html"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display: none">
+              <label
+                >Don’t fill this out if you're human: <input name="bot-field"
+              /></label>
+            </p>
+            <label for="newsletterEmail"
+              >Get the Journal by email, roughly monthly.</label
+            >
+            <div class="newsletter__row">
+              <input
+                type="email"
+                id="newsletterEmail"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+              <button type="submit">Submit</button>
+            </div>
+            <p
+              class="newsletter__msg"
+              id="newsletterMsg"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+
+          <!-- NEW FORM -->
+        </div>
+      </section>
+
+      <!-- ============ AD SLOT — footer banner unit ============ -->
+      <div
+        class="ad-slot ad-slot--banner container"
+        data-ad-slot="footer-banner"
+      >
+        <span class="ad-slot__label">Advertisement</span>
+        <!--
+      Replace with your real AdSense display unit:
+    -->
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-2308916087883001"
+          data-ad-slot="XXXXXXXXXX"
+          data-ad-format="horizontal"
+          data-full-width-responsive="true"
+        ></ins>
+        <script>
+          ;(adsbygoogle = window.adsbygoogle || []).push({})
+        </script>
+        <div class="ad-slot__placeholder">
+          Ad space — 728×90 responsive banner
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__row">
+        <span class="logo">
+          <img
+            class="logo-img"
+            src="/assets/images/favicon/outside-blue.png"
+            alt="Praevia Studio Logo"
+          />
+        </span>
+        <span
+          >© <span id="year"></span> Praevia Studio. All rights reserved.</span
+        >
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          ↑ Top
+        </button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blogger-feed.js" defer></script>
+  </body>
+</html>

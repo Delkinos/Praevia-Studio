@@ -1,0 +1,154 @@
+:root {
+  --bg: #0b0f14;
+  --surface: #121821;
+  --primary: #c9a86a;
+  --secondary: #aeb6c2;
+  --accent: #7c5cff;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--secondary);
+  font-family: 'Inter';
+  cursor: none;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  backdrop-filter: blur(12px);
+  z-index: 100;
+}
+
+.nav-links {
+  padding-right: 40px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding-right: 10px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #7c5cff, transparent);
+  filter: blur(120px);
+}
+
+.hero-title {
+  font-family: 'Cinzel';
+  font-size: 5rem;
+  letter-spacing: 0.2em;
+  color: white;
+}
+
+.hero-sub {
+  margin: 20px 0;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: linear-gradient(90deg, #c9a86a, #e6c27a);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.section {
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* PROJECT */
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+
+.project:hover .overlay {
+  transform: translateY(0);
+}
+
+/* CURSOR */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+}
+
+/* PROGRESS */
+.progress {
+  position: fixed;
+  top: 0;
+  height: 2px;
+  background: var(--primary);
+  width: 0%;
+}
+
+/* Contact Form */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input,
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: var(--surface);
+  color: white;
+}

@@ -1,0 +1,29 @@
+<!-- 1) Paste this where you want the posts to appear (home page or a /blog.html page) -->
+<section class="blog-section">
+  <h2>Latest from the blog</h2>
+  <div id="blog-posts"></div>
+  <p><a href="https://blog.yoursite.com">See all posts &rarr;</a></p>
+</section>
+
+<!-- 2) Paste this just before </body> -->
+<script src="/blogger-feed.js" defer></script>
+
+<!-- 3) Add this CSS to your stylesheet, then adjust colors and fonts to match your design -->
+<style>
+  #blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+  .post-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .post-card h3 { margin: .6rem 0 .2rem; font-size: 1.1rem; }
+  .post-card h3 a { text-decoration: none; color: inherit; }
+  .post-card time { font-size: .85rem; opacity: .7; }
+  .post-card p { margin: .5rem 0; line-height: 1.5; }
+  .read-more { font-weight: 600; }
+</style>

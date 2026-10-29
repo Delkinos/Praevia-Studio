@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horn &amp; Beam — A Field Guide to Horned Animals</title>
+<meta name="description" content="An illustrated field guide to the world's most remarkable horned animals — how horns grow, twist, and evolve.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="wrap">
+    <a href="#top" class="logo">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 32 Q6 18 16 10 Q20 7 20 12 Q20 7 24 10 Q34 18 32 32" fill="none" stroke="#d3a625" stroke-width="2.4" stroke-linecap="round"/></svg>
+      Horn &amp; Beam
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#guide">Field Guide</a></li>
+      <li><a href="#compare">Horn vs Antler</a></li>
+      <li><a href="#measure">Compare Sizes</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Plates I–IX · Illustrated Field Guide</span>
+        <h1>The architecture<br>of <em>horns</em>, catalogued.</h1>
+        <p class="lede">Nine species. Nine strategies for growing weapons out of keratin and bone. A visual survey of curl, twist, ridge, and sweep — built for anyone who's ever wondered why a kudu's horn spirals and a rhino's doesn't.</p>
+        <div class="cta-row">
+          <a href="#guide" class="btn">Enter the guide</a>
+          <a href="#compare" class="btn ghost">Horn vs. antler</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg viewBox="0 0 300 300" aria-hidden="true">
+          <circle class="ring" cx="150" cy="150" r="130"/>
+          <circle class="ring" cx="150" cy="150" r="100"/>
+          <path class="horn-path" d="M120 240 Q90 190 110 140 Q120 100 100 70 Q90 50 105 35"/>
+          <path class="horn-path alt" d="M180 240 Q210 190 190 140 Q180 100 200 70 Q210 50 195 35"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>HORNS ARE PERMANENT, ANTLERS ARE SHED ANNUALLY</span>
+      <span>THE ADDAX CAN SURVIVE WITHOUT DRINKING WATER FOR MONTHS</span>
+      <span>MARKHOR HORNS CAN TWIST INTO A FULL DOUBLE HELIX</span>
+      <span>BOTH MALE AND FEMALE BOVIDS OFTEN GROW HORNS</span>
+      <span>A BIGHORN RAM'S HORNS CAN WEIGH MORE THAN ITS SKELETON</span>
+      <span>RHINO HORN IS SOLID KERATIN — THE SAME PROTEIN AS HUMAN HAIR</span>
+      <span>HORNS ARE PERMANENT, ANTLERS ARE SHED ANNUALLY</span>
+      <span>THE ADDAX CAN SURVIVE WITHOUT DRINKING WATER FOR MONTHS</span>
+      <span>MARKHOR HORNS CAN TWIST INTO A FULL DOUBLE HELIX</span>
+      <span>BOTH MALE AND FEMALE BOVIDS OFTEN GROW HORNS</span>
+      <span>A BIGHORN RAM'S HORNS CAN WEIGH MORE THAN ITS SKELETON</span>
+      <span>RHINO HORN IS SOLID KERATIN — THE SAME PROTEIN AS HUMAN HAIR</span>
+    </div>
+  </div>
+
+  <section id="intro">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">Before the guide</span>
+          <h2>Three things worth knowing first</h2>
+        </div>
+        <p>A quick primer so the plates ahead make more sense.</p>
+      </div>
+      <div class="intro-grid">
+        <div class="intro-card">
+          <span class="num mono">01</span>
+          <h3>It's keratin, not bone</h3>
+          <p>True horns are a bony core sheathed in compressed keratin — the same material as fingernails. Unlike antlers, that sheath never falls off and keeps growing for life.</p>
+        </div>
+        <div class="intro-card">
+          <span class="num mono">02</span>
+          <h3>Shape follows fighting style</h3>
+          <p>Spiraled horns lock together in twisting duels, curved horns clash head-on, and straight rapier horns are built for fencing at a distance. Form is a record of combat.</p>
+        </div>
+        <div class="intro-card">
+          <span class="num mono">03</span>
+          <h3>Growth rings tell age</h3>
+          <p>Many horned species lay down a new ridge each year, the way a tree lays down rings — count the ridges on a bighorn and you're reading its birth year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">The Collection</span>
+          <h2>Nine specimens, field-sketched</h2>
+        </div>
+        <p>Filter by horn geometry. Tap any plate to open the field notes.</p>
+      </div>
+
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="spiral">Spiral</button>
+        <button class="filter-btn" data-filter="curved">Curved</button>
+        <button class="filter-btn" data-filter="straight">Straight</button>
+      </div>
+
+      <div class="grid" id="specimenGrid"><!-- injected by JS --></div>
+    </div>
+  </section>
+
+  <section id="compare">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">Frequently Confused</span>
+          <h2>Horn, or antler?</h2>
+        </div>
+        <p>They look related. Biologically, they aren't.</p>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" data-tab="horn" role="tab" aria-selected="true">Horn</button>
+        <button class="tab-btn" data-tab="antler" role="tab" aria-selected="false">Antler</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="horn">
+        <div class="col">
+          <h3>Horn</h3>
+          <ul>
+            <li>Permanent — grows continuously and is never shed.</li>
+            <li>A bony core wrapped in a keratin sheath.</li>
+            <li>Usually unbranched, though it may curve or spiral.</li>
+            <li>Found on both males and females in most species (cattle, sheep, goats, antelope).</li>
+            <li>Growth slows but never fully stops once maturity is reached.</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Owners in this guide</h3>
+          <p style="color:var(--ivory-dim); font-size:0.94rem;">Bighorn Sheep, Gemsbok, Greater Kudu, Alpine Ibex, Addax, Markhor, Water Buffalo, and Pronghorn are all true horn-bearers — along with rhinos, whose horn is unique in having no bony core at all, just solid compressed keratin.</p>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="antler">
+        <div class="col">
+          <h3>Antler</h3>
+          <ul>
+            <li>Temporary — grown fresh each year and shed after mating season.</li>
+            <li>Pure bone, covered in blood-rich "velvet" while growing.</li>
+            <li>Usually branched into multiple points or tines.</li>
+            <li>Found almost exclusively on males (reindeer are the exception).</li>
+            <li>Regrows larger each year until the animal passes its prime.</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>None of these, here</h3>
+          <p style="color:var(--ivory-dim); font-size:0.94rem;">Deer, elk, moose, and caribou grow antlers rather than horns — which is exactly why you won't find them in this guide. This collection is horn-bearers only.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="measure">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="tag">Side by Side</span>
+          <h2>Compare horn length</h2>
+        </div>
+        <p>Pick a species to see how its horn measures up against the rest of the guide.</p>
+      </div>
+
+      <div class="measure">
+        <select class="measure-select" id="measureSelect" aria-label="Choose a species to highlight"></select>
+        <div id="measureBars"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="about">
+  <div class="wrap">
+    <div>
+      <div class="logo" style="margin-bottom:6px;">
+        <svg viewBox="0 0 40 40" aria-hidden="true" width="22" height="22"><path d="M8 32 Q6 18 16 10 Q20 7 20 12 Q20 7 24 10 Q34 18 32 32" fill="none" stroke="#d3a625" stroke-width="2.4" stroke-linecap="round"/></svg>
+        Horn &amp; Beam
+      </div>
+      <p class="fine">A portfolio project — illustrated in-browser with hand-drawn SVG, no photography used.</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="#top">Back to top</a></li>
+      <li><a href="#guide">Field Guide</a></li>
+      <li><a href="#compare">Horn vs Antler</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

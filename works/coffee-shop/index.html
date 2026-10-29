@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember Roasting Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <span class="brand">Ember Roasting Co.</span>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#roast">Roast lab</a>
+      <a href="#origin">Origins</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-row">
+      <div class="hero-copy">
+        <p class="eyebrow">Small-batch roastery &amp; café</p>
+        <h1>Roasted to the sound of the second crack.</h1>
+        <p class="hero-sub">We roast in five-kilo batches, twice a week, and pull every shot to order. No batch brew sitting in a thermos — if it's not fresh, we don't serve it.</p>
+        <a class="btn" href="#menu">See the menu</a>
+      </div>
+      <div class="hero-cup" aria-hidden="true">
+        <div class="cup">
+          <div class="steam s1"></div>
+          <div class="steam s2"></div>
+          <div class="steam s3"></div>
+          <div class="crema"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="roast-lab" id="roast">
+    <div class="wrap">
+      <p class="eyebrow">Signature: the roast curve</p>
+      <h2>Same bean, five different cups.</h2>
+      <p class="section-lede">Drag the roast level and watch what changes — not just the color of the bean, but the crack you'd hear in the drum and the flavor it leaves behind.</p>
+
+      <div class="roast-widget">
+        <div class="bean-display">
+          <div class="bean" id="beanVisual"></div>
+        </div>
+        <div class="roast-controls">
+          <input type="range" id="roastSlider" min="1" max="5" value="3" step="1" aria-label="Roast level">
+          <div class="roast-scale">
+            <span>Light</span><span>City</span><span>Full City</span><span>Dark</span><span>French</span>
+          </div>
+          <div class="roast-readout">
+            <h3 id="roastStage">Full City</h3>
+            <p id="roastCrack">Roasted between first and second crack — balanced, still holds acidity.</p>
+            <p class="tasting-label">Tastes like</p>
+            <p id="roastNotes" class="tasting-notes">Toasted almond, brown sugar, dried cherry</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <h2>On the counter</h2>
+      <div class="menu-columns">
+        <div class="menu-col">
+          <h3>Espresso</h3>
+          <div class="menu-item"><span>Espresso</span><span class="price">$3.25</span></div>
+          <div class="menu-item"><span>Cortado</span><span class="price">$4.00</span></div>
+          <div class="menu-item"><span>Cappuccino</span><span class="price">$4.50</span></div>
+          <div class="menu-item"><span>Flat white</span><span class="price">$4.75</span></div>
+          <div class="menu-item"><span>Oat milk latte</span><span class="price">$5.25</span></div>
+        </div>
+        <div class="menu-col">
+          <h3>Filter</h3>
+          <div class="menu-item"><span>Pour-over, single origin</span><span class="price">$5.50</span></div>
+          <div class="menu-item"><span>Batch drip</span><span class="price">$3.00</span></div>
+          <div class="menu-item"><span>Cold brew</span><span class="price">$4.50</span></div>
+          <div class="menu-item"><span>Iced pour-over</span><span class="price">$5.75</span></div>
+        </div>
+        <div class="menu-col">
+          <h3>From the kitchen</h3>
+          <div class="menu-item"><span>Almond croissant</span><span class="price">$4.25</span></div>
+          <div class="menu-item"><span>Brown butter scone</span><span class="price">$3.75</span></div>
+          <div class="menu-item"><span>Basque cheesecake, slice</span><span class="price">$5.50</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="origin" id="origin">
+    <div class="wrap">
+      <h2>Where the beans come from</h2>
+      <div class="origin-grid">
+        <article class="origin-card">
+          <h3>Yirgacheffe, Ethiopia</h3>
+          <p>Washed, high-altitude lots with the floral, tea-like brightness the region is known for. Our house pour-over.</p>
+        </article>
+        <article class="origin-card">
+          <h3>Huila, Colombia</h3>
+          <p>Caturra and Castillo varietals grown between 1,600–1,900m. Balanced body, caramel sweetness, low acidity.</p>
+        </article>
+        <article class="origin-card">
+          <h3>Mandheling, Sumatra</h3>
+          <p>Wet-hulled processing gives this lot its signature earthy, syrupy weight — the backbone of our dark roast blend.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap visit-row">
+      <div>
+        <h2>Come sit for a while</h2>
+        <p>We keep the espresso machine loud and the tables mismatched on purpose. Bring a book, bring your laptop, bring nothing at all.</p>
+      </div>
+      <div class="hours">
+        <div class="hours-row"><span>Mon–Fri</span><span>7:00 – 18:00</span></div>
+        <div class="hours-row"><span>Saturday</span><span>8:00 – 18:00</span></div>
+        <div class="hours-row"><span>Sunday</span><span>8:00 – 15:00</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="brand small">Ember Roasting Co.</span>
+    <p>412 Kiln Street</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

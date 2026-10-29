@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canopy Watch — The Vanishing Forest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <span class="brand">Canopy&nbsp;Watch</span>
+    <nav>
+      <a href="#decline">Decline</a>
+      <a href="#effects">Effects</a>
+      <a href="#action">Take action</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Global forest cover, 1990 → 2024</p>
+      <h1>The canopy is<br>thinning out.</h1>
+      <p class="hero-sub">Every year the world clears an area of forest roughly the size of a small country. This page traces where it's going, what it costs, and what actually slows it down.</p>
+
+      <div class="canopy-strip" id="canopyStrip" aria-label="Illustrative forest cover decline, 1990 to 2024">
+        <!-- rows injected by JS -->
+      </div>
+      <div class="strip-labels">
+        <span>1990</span>
+        <span>2024</span>
+      </div>
+      <p class="strip-caption">Each row is one decade of tree cover, thinning left to right. Figures are illustrative, based on widely reported FAO / Global Forest Watch trends.</p>
+    </div>
+  </section>
+
+  <section class="causes" id="decline">
+    <div class="wrap">
+      <h2>Where the trees are going</h2>
+      <p class="section-lede">Deforestation is rarely one villain. It's a handful of pressures, stacking up on the same land.</p>
+
+      <div class="cause-grid">
+        <article class="cause-card">
+          <span class="cause-mark">field</span>
+          <h3>Agricultural expansion</h3>
+          <p>Cropland and cattle pasture drive the largest share of tropical forest loss, especially across the Amazon and Southeast Asia.</p>
+        </article>
+        <article class="cause-card">
+          <span class="cause-mark">timber</span>
+          <h3>Logging &amp; timber</h3>
+          <p>Legal and illegal logging removes old growth for lumber, paper pulp, and fuelwood, often opening roads that invite further clearing.</p>
+        </article>
+        <article class="cause-card">
+          <span class="cause-mark">ore</span>
+          <h3>Mining &amp; extraction</h3>
+          <p>Mineral and oil extraction clears forest directly and fragments what's left, cutting corridors that wildlife can no longer cross.</p>
+        </article>
+        <article class="cause-card">
+          <span class="cause-mark">fire</span>
+          <h3>Fire</h3>
+          <p>Land is often cleared with fire, and a warming, drier climate makes those fires more likely to spread beyond where they were set.</p>
+        </article>
+        <article class="cause-card">
+          <span class="cause-mark">grid</span>
+          <h3>Urban &amp; infrastructure growth</h3>
+          <p>Roads, dams, and expanding settlements push into forest edges, converting land in ways that are rarely reversed.</p>
+        </article>
+        <article class="cause-card">
+          <span class="cause-mark">crop</span>
+          <h3>Cash crops</h3>
+          <p>Palm oil, soy, coffee, and cocoa grown for export are among the most common replacements for cleared tropical forest.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="effects" id="effects">
+    <div class="wrap">
+      <h2>What's lost with the canopy</h2>
+      <div class="effects-grid">
+        <div class="effect-row">
+          <h3>Carbon released, not stored</h3>
+          <p>Standing forests hold carbon for centuries. Cleared and burned, that carbon returns to the atmosphere — forests currently offset only a fraction of what they once absorbed.</p>
+        </div>
+        <div class="effect-row">
+          <h3>Species with nowhere to go</h3>
+          <p>Forests hold most of the planet's land-based species. Fragmented habitat isolates populations until they can no longer sustain themselves.</p>
+        </div>
+        <div class="effect-row">
+          <h3>Disrupted rainfall</h3>
+          <p>Large forests generate their own rain by recycling moisture inland. Remove enough of the canopy and the rainfall pattern it created weakens too.</p>
+        </div>
+        <div class="effect-row">
+          <h3>Soil that washes away</h3>
+          <p>Roots hold slopes together. Without them, topsoil erodes within a few seasons, silting rivers and lowering the land's ability to regrow.</p>
+        </div>
+        <div class="effect-row">
+          <h3>Communities displaced</h3>
+          <p>Indigenous and forest-dependent communities lose the land their food, water, and livelihoods depend on — often with the least say in the decision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="action" id="action">
+    <div class="wrap">
+      <h2>What actually slows this down</h2>
+      <p class="section-lede">Not every well-meaning action moves the needle equally. These do.</p>
+
+      <div class="action-list">
+        <div class="action-item">
+          <h3>Look for FSC or Rainforest Alliance labels</h3>
+          <p>On wood, paper, and palm-oil products, these certifications mean the supply chain was audited against deforestation-free sourcing rules.</p>
+        </div>
+        <div class="action-item">
+          <h3>Cut back on the highest-footprint foods</h3>
+          <p>Beef and soy (mostly grown for animal feed) are linked to more tropical deforestation than almost any other food category.</p>
+        </div>
+        <div class="action-item">
+          <h3>Back land rights for indigenous communities</h3>
+          <p>Forests under indigenous stewardship consistently show lower deforestation rates than surrounding land — securing their land titles protects the forest too.</p>
+        </div>
+        <div class="action-item">
+          <h3>Support verified restoration, not just planting pledges</h3>
+          <p>A tree planted isn't a forest restored. Favor organizations that track long-term survival rates, not just sapling counts.</p>
+        </div>
+        <div class="action-item">
+          <h3>Push for policy, not just personal habits</h3>
+          <p>Supply-chain deforestation laws and protected-area enforcement shift far more land than individual consumption choices ever can alone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Canopy Watch is an educational design project. Figures shown are illustrative approximations of widely reported trends, not sourced statistics for citation.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

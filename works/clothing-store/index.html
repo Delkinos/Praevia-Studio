@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selvedge — Cut for how you move</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <span class="brand">SELVEDGE</span>
+    <nav>
+      <a href="#rack">Shop</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#fit">Fit guide</a>
+    </nav>
+    <button class="bag-btn" id="bagBtn">Bag <span id="bagCount">0</span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Fall / Winter</p>
+      <h1>Cut for how<br>you actually move.</h1>
+      <p class="hero-sub">No mannequin poses. Every piece is drafted from patterns tested on people who sit, bike, and carry bags for a living.</p>
+      <a class="btn" href="#rack">Browse the rack</a>
+    </div>
+  </section>
+
+  <section class="rack" id="rack">
+    <div class="wrap rack-head">
+      <h2>The rack</h2>
+      <p class="rack-hint">Drag to browse →</p>
+    </div>
+
+    <div class="rack-rail" id="rackRail">
+
+      <article class="garment" data-price="128" style="--tilt:-3deg; --swatch:#3B4A3F;">
+        <div class="hanger"></div>
+        <div class="swatch"></div>
+        <div class="garment-info">
+          <h3>Field Overshirt</h3>
+          <p class="tag">Waxed cotton · Olive</p>
+          <div class="sizes" data-sizes></div>
+          <div class="garment-foot">
+            <span class="price">$128</span>
+            <button class="add-btn" data-add>Add to bag</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="garment" data-price="96" style="--tilt:2deg; --swatch:#8B6F5C;">
+        <div class="hanger"></div>
+        <div class="swatch"></div>
+        <div class="garment-info">
+          <h3>Selvedge Denim</h3>
+          <p class="tag">14oz raw denim · Indigo</p>
+          <div class="sizes" data-sizes></div>
+          <div class="garment-foot">
+            <span class="price">$96</span>
+            <button class="add-btn" data-add>Add to bag</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="garment" data-price="64" style="--tilt:-2deg; --swatch:#D8A62B;">
+        <div class="hanger"></div>
+        <div class="swatch"></div>
+        <div class="garment-info">
+          <h3>Merino Crewneck</h3>
+          <p class="tag">17.5 micron merino · Mustard</p>
+          <div class="sizes" data-sizes></div>
+          <div class="garment-foot">
+            <span class="price">$64</span>
+            <button class="add-btn" data-add>Add to bag</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="garment" data-price="152" style="--tilt:3deg; --swatch:#17181A;">
+        <div class="hanger"></div>
+        <div class="swatch"></div>
+        <div class="garment-info">
+          <h3>Wool Chore Coat</h3>
+          <p class="tag">Melton wool · Black</p>
+          <div class="sizes" data-sizes></div>
+          <div class="garment-foot">
+            <span class="price">$152</span>
+            <button class="add-btn" data-add>Add to bag</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="garment" data-price="58" style="--tilt:-1deg; --swatch:#6B7A63;">
+        <div class="hanger"></div>
+        <div class="swatch"></div>
+        <div class="garment-info">
+          <h3>Utility Trouser</h3>
+          <p class="tag">Cotton twill · Moss</p>
+          <div class="sizes" data-sizes></div>
+          <div class="garment-foot">
+            <span class="price">$58</span>
+            <button class="add-btn" data-add>Add to bag</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="garment" data-price="84" style="--tilt:2deg; --swatch:#A8524A;">
+        <div class="hanger"></div>
+        <div class="swatch"></div>
+        <div class="garment-info">
+          <h3>Flannel Shirt</h3>
+          <p class="tag">Brushed cotton · Brick</p>
+          <div class="sizes" data-sizes></div>
+          <div class="garment-foot">
+            <span class="price">$84</span>
+            <button class="add-btn" data-add>Add to bag</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="lookbook" id="lookbook">
+    <div class="wrap">
+      <h2>Fabric first</h2>
+      <p class="section-lede">We choose the cloth before we draft the pattern. Every swatch below is a fabric we currently cut from.</p>
+      <div class="swatch-grid">
+        <div class="swatch-card" style="--sc:#3B4A3F;"><span>Waxed cotton</span></div>
+        <div class="swatch-card" style="--sc:#8B6F5C;"><span>Raw selvedge denim</span></div>
+        <div class="swatch-card" style="--sc:#D8A62B;"><span>Merino wool</span></div>
+        <div class="swatch-card" style="--sc:#17181A;"><span>Melton wool</span></div>
+        <div class="swatch-card" style="--sc:#6B7A63;"><span>Cotton twill</span></div>
+        <div class="swatch-card" style="--sc:#A8524A;"><span>Brushed flannel</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fit" id="fit">
+    <div class="wrap fit-row">
+      <div>
+        <h2>Sized for real bodies</h2>
+        <p>Every product page lists finished garment measurements, not just S/M/L — laid flat, in inches, taken from the actual sample.</p>
+      </div>
+      <div class="fit-table">
+        <div class="fit-row-item"><span>XS</span><span>Chest 36"</span></div>
+        <div class="fit-row-item"><span>S</span><span>Chest 38"</span></div>
+        <div class="fit-row-item"><span>M</span><span>Chest 40"</span></div>
+        <div class="fit-row-item"><span>L</span><span>Chest 42"</span></div>
+        <div class="fit-row-item"><span>XL</span><span>Chest 44"</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <span class="brand">SELVEDGE</span>
+    <form class="newsletter" id="newsletterForm">
+      <label for="email">Get notified before a drop sells out</label>
+      <div class="newsletter-row">
+        <input type="email" id="email" placeholder="you@email.com" required>
+        <button type="submit">Notify me</button>
+      </div>
+      <p class="newsletter-msg" id="newsletterMsg" role="status"></p>
+    </form>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

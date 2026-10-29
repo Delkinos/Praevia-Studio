@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Works — Praevia Studio</title>
+    <meta
+      name="description"
+      content="Selected branding, web, film and editorial work from Praevia Studio."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="masthead" id="top">
+      <div class="masthead__top container">
+        <a href="/index.html" class="wordmark">PRAEVIA <span>STUDIO</span></a>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+          <a href="/works/index.html">Works</a>
+          <a href="/journal/index.html">Journal</a>
+          <a href="/index.html#about">About</a>
+          <a href="/index.html#contact">Contact</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="works container" style="padding-top: 3rem">
+      <div class="section-head">
+        <span class="section-num">01</span>
+        <h2>Works — All Projects</h2>
+      </div>
+
+      <div class="works-grid" id="worksGrid">
+        <!-- ADD NEW PROJECTS HERE (copy a card and update num/title/meta/href/plate color/category) -->
+
+        <a
+          class="work-card"
+          data-category="branding"
+          style="
+            --plate: #14151a;
+            --plate-image: url('works/Horn/Horn-and-Beam.jpeg');
+          "
+          href="Horn/index.html"
+        >
+          <div class="work-card__plate work-card__plate--photo">
+            <span>01</span>
+          </div>
+          <h3>Horn &amp; Beam</h3>
+          <p class="work-card__meta">
+            Web — Plates I–IX · Illustrated Field Guide
+          </p>
+        </a>
+
+        <a
+          class="work-card"
+          data-category="branding"
+          style="
+            --plate: #14151a;
+            --plate-image: url('works/Horn/Horn-and-Beam.jpeg');
+          "
+          href="ELITE/index.html"
+        >
+          <div class="work-card__plate work-card__plate--photo">
+            <span>02</span>
+          </div>
+          <h3>E — LITE</h3>
+          <p class="work-card__meta">Branding — Moving forward</p>
+        </a>
+
+        <a
+          class="work-card"
+          data-category="web"
+          style="
+            --plate: #f2c230;
+            --plate-image: url('works/Modan-studio/Modan-Studio.jpeg');
+          "
+          href="Modan-studio/Pixel.html"
+        >
+          <div class="work-card__plate work-card__plate--photo">
+            <span>03</span>
+          </div>
+          <h3>Modan Studio</h3>
+          <p class="work-card__meta">Web — Studio Website</p>
+        </a>
+
+        <a
+          class="work-card"
+          data-category="web"
+          style="
+            --plate: #6b695f;
+            --plate-image: url('works/clothing-store/Selvedge.jpeg');
+          "
+          href="clothing-store/index.html"
+        >
+          <div class="work-card__plate work-card__plate--photo">
+            <span>04</span>
+          </div>
+          <h3>Today's Fashion</h3>
+          <p class="work-card__meta">Web — Clothing Store(E-comerce)</p>
+        </a>
+
+        <a
+          class="work-card"
+          data-category="web"
+          style="
+            --plate: #1e3af0;
+            --plate-image: url('works/coffee-shop/Ember-Roasting.jpeg');
+          "
+          href="coffee-shop/index.html"
+        >
+          <div class="work-card__plate work-card__plate--photo">
+            <span>05</span>
+          </div>
+          <h3>K for coffee</h3>
+          <p class="work-card__meta">Web — Coffee - Shop</p>
+        </a>
+
+        <a
+          class="work-card"
+          data-category="web"
+          style="
+            --plate: #14151a;
+            --plate-image: url('works/forest-decline/Canopy.jpeg');
+          "
+          href="forest-decline/index.html"
+        >
+          <div class="work-card__plate work-card__plate--photo">
+            <span>06</span>
+          </div>
+          <h3>Fading World</h3>
+          <p class="work-card__meta">Web — Site about forest decline</p>
+        </a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__row">
+        <span
+          >© <span id="year"></span> Praevia Studio. All rights reserved.</span
+        >
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          ↑ Top
+        </button>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

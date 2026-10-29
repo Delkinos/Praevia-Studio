@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal — Praevia Studio</title>
+    <meta
+      name="description"
+      content="Essays, field notes and half-finished ideas from Praevia Studio."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="masthead" id="top">
+      <div class="masthead__top container">
+        <a href="/index.html" class="wordmark">PRAEVIA <span>STUDIO</span></a>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+          <a href="/works/index.html">Works</a>
+          <a href="/journal/index.html">Journal</a>
+          <a href="/index.html#about">About</a>
+          <a href="/index.html#contact">Contact</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="journal container" style="padding-top: 3rem">
+      <div class="section-head">
+        <span class="section-num">02</span>
+        <h2>Journal — All Posts</h2>
+      </div>
+
+      <div class="journal-list">
+        <!--
+      ADD NEW POSTS HERE (copy a row and update date/title/href/excerpt/tag).
+      Keep newest at the top.
+    -->
+
+        <article class="journal-row">
+          <span class="journal-row__date">Jul 14, 2026</span>
+          <h3 class="journal-row__title">
+            <a href="../posts/designing-in-public-with-performance.md"
+              >Designing in public without performing</a
+            >
+          </h3>
+          <p class="journal-row__excerpt">
+            On sharing unfinished work honestly, and why "process content" so
+            often flattens the process it claims to show.
+          </p>
+          <span class="journal-row__tag">Notes</span>
+        </article>
+
+        <article class="journal-row">
+          <span class="journal-row__date">Jun 29, 2026</span>
+          <h3 class="journal-row__title">
+            <a href="../posts/a-short-dense-boring-version.md"
+              >A short defense of the boring version</a
+            >
+          </h3>
+          <p class="journal-row__excerpt">
+            Every project has a boring, correct version underneath the
+            interesting one. Finding it first makes the interesting part earn
+            its place.
+          </p>
+          <span class="journal-row__tag">Essay</span>
+        </article>
+
+        <article class="journal-row">
+          <span class="journal-row__date">Jun 02, 2026</span>
+          <h3 class="journal-row__title">
+            <a href="../posts/notes-from-a-two-week-film-shoot.md"
+              >Notes from a two-week film shoot</a
+            >
+          </h3>
+          <p class="journal-row__excerpt">
+            What changed when I started treating a documentary shoot like a
+            design sprint — and what I'd never do that way again.
+          </p>
+          <span class="journal-row__tag">Field Notes</span>
+        </article>
+
+        <article class="journal-row">
+          <span class="journal-row__date">May 18, 2026</span>
+          <h3 class="journal-row__title">
+            <a href="../posts/type-systems-for-people-who-hate-systems.md "
+              >Type systems for people who hate systems</a
+            >
+          </h3>
+          <p class="journal-row__excerpt">
+            A practical, small type scale for solo designers who don't want to
+            maintain a design system for an audience of one.
+          </p>
+          <span class="journal-row__tag">Essay</span>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__row">
+        <span
+          >© <span id="year"></span> Praevia Studio. All rights reserved.</span
+        >
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          ↑ Top
+        </button>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
