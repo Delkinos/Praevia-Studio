@@ -499,7 +499,7 @@ section {
 .work-card__plate {
   aspect-ratio: 4/3;
   border-radius: var(--radius);
-  background: var(--plate, var(--ink));
+  background: var(--plate, var(--link));
   display: flex;
   align-items: flex-end;
   padding: 14px;
