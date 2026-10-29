@@ -523,6 +523,14 @@ section {
   background-position: 50% 0%;
   animation: platePan 16s ease-in-out infinite;
 }
+@keyframes platePan {
+  0%, 100% {
+    background-position: 50% 0%;  
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+}
 .work-card__plate--photo::after {
   content: '';
   position: absolute;
