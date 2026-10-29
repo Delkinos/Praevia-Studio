@@ -499,7 +499,7 @@ section {
 .work-card__plate {
   aspect-ratio: 4/3;
   border-radius: var(--radius);
-  background: var(--plate, var(--link));
+  background: var(--plate, var(--ink));
   display: flex;
   align-items: flex-end;
   padding: 14px;
@@ -524,8 +524,9 @@ section {
   animation: platePan 16s ease-in-out infinite;
 }
 @keyframes platePan {
-  0%, 100% {
-    background-position: 50% 0%;  
+  0%,
+  100% {
+    background-position: 50% 0%;
   }
   50% {
     background-position: 50% 100%;
