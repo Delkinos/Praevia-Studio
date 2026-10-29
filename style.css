@@ -481,21 +481,6 @@ section {
   background: var(--line);
   border: 1px solid var(--line);
 }
-.work-card {
-  background: var(--paper);
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  transition: transform 0.2s ease;
-}
-.work-card:not(.ad-slot):hover {
-  transform: translateY(-4px);
-}
-.work-card.is-hidden {
-  display: none;
-}
-
 .work-card__plate {
   aspect-ratio: 4/3;
   border-radius: var(--radius);
@@ -512,36 +497,41 @@ section {
   font-size: 13px;
   mix-blend-mode: difference;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-/* --- image-backed plates: full-page screenshot, slow auto-pan --- */
-.work-card__plate--photo {
-  background-image: var(--plate-image);
-  background-repeat: no-repeat;
-  background-size: 100% auto; /* fit width, keep the tall screenshot's natural height */
-  background-position: 50% 0%;
+/* --- image-backed plates using <img> tag --- */
+.work-card__plate--photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  z-index: 0;
   animation: platePan 16s ease-in-out infinite;
-}
-@keyframes platePan {
-  0%,
-  100% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 50% 100%;
-  }
 }
 .work-card__plate--photo::after {
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.55),
     rgba(0, 0, 0, 0) 40%
   );
   pointer-events: none;
+}
+
+@keyframes platePan {
+  0%,
+  100% {
+    object-position: 50% 0%;
+  }
+  50% {
+    object-position: 50% 100%;
+  }
 }
 
 .work-card h3 {
