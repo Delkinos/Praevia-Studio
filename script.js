@@ -74,22 +74,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('newsletterForm')
   const msg = document.getElementById('newsletterMsg')
   const emailInput = document.getElementById('newsletterEmail')
+  const frame = document.getElementById('subscribeFrame')
+  let waiting = false
 
-  if (form) {
+  if (form && msg && emailInput) {
     form.addEventListener('submit', (e) => {
-      e.preventDefault()
       const value = emailInput.value.trim()
       const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
 
       if (!isValid) {
+        e.preventDefault()
         msg.textContent =
           'That email doesn\u2019t look right — please double-check it.'
         msg.style.color = '#B3261E'
         return
       }
-      msg.textContent = `Thanks — confirmation on its way to ${value}.`
-      msg.style.color = '#1E3AF0'
+
+      // Valid: let the form send to Brevo, then wait for the reply
+      waiting = true
+      msg.textContent = 'Sending...'
+      msg.style.color = '#4A4940'
     })
+
+    if (frame) {
+      frame.addEventListener('load', () => {
+        if (!waiting) return
+        waiting = false
+        msg.textContent =
+          'Almost done — check your inbox to confirm your subscription (and your spam folder).'
+        msg.style.color = '#1E3AF0'
+        form.reset()
+      })
+    }
   }
 
   /* ---------- Back to top ---------- */
