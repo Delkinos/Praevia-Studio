@@ -427,68 +427,81 @@
 
       <!-- ================= CONTACT ================= -->
       <section id="contact" class="contact container">
-        <div class="section-head">
-          <span class="section-num">05</span>
-          <h2>Contact</h2>
-        </div>
+  <div class="section-head">
+    <span class="section-num">05</span>
+    <h2>Contact</h2>
+  </div>
 
-        <div class="contact__grid">
-          <div class="contact__main">
-            <a href="mailto:preaviastudio@gmail.com" class="contact__email"
-              >hello@praevia.studio</a
-            >
-            <p class="contact__note">
-              For commissions, collaborations, or just to say the journal was
-              useful. I read everything myself.
-            </p>
+  <div class="contact__grid">
+    <div class="contact__main">
+      <a href="mailto:preaviastudio@gmail.com" class="contact__email"
+        >hello@praeviastudio.com</a
+      >
+      <p class="contact__note">
+        For commissions, collaborations, or just to say the journal was
+        useful. I read everything myself.
+      </p>
 
-            <ul class="contact__social">
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Are.na</a></li>
-              <li><a href="#">Letterboxd</a></li>
-              <li><a href="#">RSS</a></li>
-            </ul>
-          </div>
-
-          <form
-            class="newsletter"
-            id="newsletterForm"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            action="/thanks.html"
+      <ul class="contact__social">
+        <li><a href="https://blog.praeviastudio.com">Journal</a></li>
+        <li>
+          <a href="https://blog.praeviastudio.com/feeds/posts/default?alt=rss"
+            >RSS</a
           >
-            <input type="hidden" name="form-name" value="contact" />
-            <p style="display: none">
-              <label
-                >Don’t fill this out if you're human: <input name="bot-field"
-              /></label>
-            </p>
-            <label for="newsletterEmail"
-              >Get the Journal by email, roughly monthly.</label
-            >
-            <div class="newsletter__row">
-              <input
-                type="email"
-                id="newsletterEmail"
-                name="email"
-                placeholder="you@example.com"
-                required
-              />
-              <button type="submit">Submit</button>
-            </div>
-            <p
-              class="newsletter__msg"
-              id="newsletterMsg"
-              role="status"
-              aria-live="polite"
-            ></p>
-          </form>
+        </li>
+        <!-- Add Instagram, Behance, etc. here only when you have real links -->
+      </ul>
+    </div>
 
-          <!-- NEW FORM -->
-        </div>
-      </section>
+    <!-- SUBSCRIBE FORM (Brevo). Replace BREVO_FORM_URL with the form address from Brevo. -->
+    <form
+      class="newsletter"
+      id="newsletterForm"
+      action="https://api.web3forms.com/submit" 
+      method="POST"
+      target="subscribeFrame"
+    >
+      <label for="newsletterEmail"
+        >Get new posts and projects by email. No spam, unsubscribe anytime.</label
+      >
+      <div class="newsletter__row">
+        <input
+          type="email"
+          id="newsletterEmail"
+          name="EMAIL"
+          placeholder="you@example.com"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </div>
+
+      <!-- Spam trap: leave empty, hidden from people -->
+      <input
+        type="text"
+        name="email_address_check"
+        value=""
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+        style="position: absolute; left: -9999px"
+      />
+      <input type="hidden" name="access_key" value="970c242d-927b-4154-8b84-c8b378fb2c6a" />
+
+      <p
+        class="newsletter__msg"
+        id="newsletterMsg"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </form>
+    <iframe
+      id="subscribeFrame"
+      name="subscribeFrame"
+      title="Subscription response"
+      hidden
+    ></iframe>
+  </div>
+</section>
 
       <!-- ============ AD SLOT — footer banner unit ============ -->
       <div
