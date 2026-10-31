@@ -1,0 +1,78 @@
+<!-- ================= CONTACT ================= -->
+<!-- Replace your whole <section id="contact"> ... </section> in index.html with this. -->
+<section id="contact" class="contact container">
+  <div class="section-head">
+    <span class="section-num">05</span>
+    <h2>Contact</h2>
+  </div>
+
+  <div class="contact__grid">
+    <div class="contact__main">
+      <a href="mailto:hello@praeviastudio.com" class="contact__email"
+        >hello@praeviastudio.com</a
+      >
+      <p class="contact__note">
+        For commissions, collaborations, or just to say the journal was
+        useful. I read everything myself.
+      </p>
+
+      <ul class="contact__social">
+        <li><a href="https://blog.praeviastudio.com">Journal</a></li>
+        <li>
+          <a href="https://blog.praeviastudio.com/feeds/posts/default?alt=rss"
+            >RSS</a
+          >
+        </li>
+        <!-- Add Instagram, Behance, etc. here only when you have real links -->
+      </ul>
+    </div>
+
+    <!-- SUBSCRIBE FORM (Brevo). Replace BREVO_FORM_URL with the form address from Brevo. -->
+    <form
+      class="newsletter"
+      id="newsletterForm"
+      method="POST"
+      action="BREVO_FORM_URL"
+      target="subscribeFrame"
+    >
+      <label for="newsletterEmail"
+        >Get new posts and projects by email. No spam, unsubscribe anytime.</label
+      >
+      <div class="newsletter__row">
+        <input
+          type="email"
+          id="newsletterEmail"
+          name="EMAIL"
+          placeholder="you@example.com"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </div>
+
+      <!-- Spam trap: leave empty, hidden from people -->
+      <input
+        type="text"
+        name="email_address_check"
+        value=""
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true"
+        style="position: absolute; left: -9999px"
+      />
+      <input type="hidden" name="locale" value="en" />
+
+      <p
+        class="newsletter__msg"
+        id="newsletterMsg"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </form>
+    <iframe
+      id="subscribeFrame"
+      name="subscribeFrame"
+      title="Subscription response"
+      hidden
+    ></iframe>
+  </div>
+</section>
